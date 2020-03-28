@@ -51,7 +51,6 @@ jobs:
             chmod +x ./scripts/fetch_kaggle_dataset.sh ./scripts/publish_model.sh
             ./scripts/fetch_kaggle_dataset.sh
             PYTHONPATH=./packages/regression_model python3 packages/regression_model/regression_model/train_pipeline.py
-            ./scripts/publish_model.sh ./packages/regression_model/
 
 workflows:
   version: 2
