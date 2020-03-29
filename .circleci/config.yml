@@ -94,9 +94,9 @@ jobs:
           name: Capturing previous model predictions
           command: |
             source venv/bin/activate
+            pip install -r packages/ml_api/diff_test_requirements.txt
             chmod +x ./scripts/fetch_kaggle_dataset.sh
             ./scripts/fetch_kaggle_dataset.sh
-            pip install -r packages/ml_api/diff_test_requirements.txt
             PYTHONPATH=./packages/ml_api python3 packages/ml_api/tests/capture_model_predictions.py
       - run:
           name: Runnning differential tests
