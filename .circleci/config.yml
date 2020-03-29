@@ -89,6 +89,7 @@ jobs:
     steps:
       - checkout
       - *prepare_venv
+      - *fetch_data
       - run:
           name: Capturing previous model predictions
           command: |
