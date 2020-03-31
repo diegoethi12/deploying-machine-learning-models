@@ -131,11 +131,11 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - diego-master
       - section_10_deploy_to_heroku:
           requires:
             - train_and_upload_regression_model
           filters:
             branches:
               only:
-                - master
+                - diego-master
