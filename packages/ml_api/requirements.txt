@@ -10,3 +10,6 @@ git+https://github.com/diegoethi12/regression_model@v1.0.2
 
 # Deployment
 gunicorn==19.9.0
+
+# fetching datasets
+kaggle==1.5.1.1
