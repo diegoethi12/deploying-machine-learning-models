@@ -9,8 +9,6 @@ WORKDIR /opt/ml_api
 ENV FLASK_APP run.py
 
 # Install requirements, including from Gemfury
-COPY ./packages/regression_model /opt/regression_model
-ENV PYTHONPATH "/opt/packages/regression_model/"
 ADD ./packages/ml_api /opt/ml_api/
 RUN pip install --upgrade pip
 RUN pip install -r /opt/ml_api/requirements.txt
