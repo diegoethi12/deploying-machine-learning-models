@@ -117,6 +117,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - setup_remote_docker
       - run: docker login --username=$HEROKU_EMAIL --password=$HEROKU_API_KEY registry.heroku.com
       - run:
           name: Setup Heroku CLI
