@@ -176,10 +176,10 @@ workflows:
 #            branches:
 #              only:
 #                - diego-master
-       - section_12_publish_docker_image_to_aws:
-           requires:
+      - section_12_publish_docker_image_to_aws:
+          requires:
              - train_and_upload_regression_model
-           filters:
-             branches:
+          filters:
+            branches:
                only:
                  - diego-master
