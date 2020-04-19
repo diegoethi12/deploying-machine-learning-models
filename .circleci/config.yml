@@ -169,12 +169,6 @@ jobs:
           command: |
             . venv/bin/activate
             PYTHONPATH=./packages/neural_network_model python3 packages/neural_network_model/neural_network_model/train_pipeline.py
-      - run: 
-          name: Publish model to Gemfury
-          command: |
-            . venv/bin/activate
-            chmod +x ./scripts/publish_model.sh
-            ./scripts/publish_model.sh ./packages/neural_network_model/
 
 workflows:
   version: 2
@@ -222,4 +216,4 @@ workflows:
           # filters:
           #   branches:
           #     only:
-          #       - master
+          #       - diego-master

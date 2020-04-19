@@ -113,7 +113,7 @@ venv.bak/
 train.csv
 test.csv
 test_data_predictions.csv
-v2-plant-seedlings-dataset/
+packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/
 v2-plant-seedlings-dataset.zip
 
 # all logs
